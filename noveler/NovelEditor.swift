@@ -27,7 +27,7 @@ struct NovelEditor: View {
                 categoryType(category: self.$category)
                 Toggle("已讀", isOn: $read)
             }
-            .navigationBarTitle("新增新作品")
+            .navigationBarTitle("新增作品")
             .navigationBarItems(trailing: Button("儲存") {
                 
                 let novel = Novel(title: self.title, author: self.author, category: self.category, read: self.read)

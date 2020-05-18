@@ -13,12 +13,12 @@ struct AppView: View {
     var body: some View {
         TabView{
             NovelList(novelsData: self.novelsData).tabItem {
-                Image(systemName: "text.aligncenter")
+                Image(systemName: "rectangle.fill.on.rectangle.angled.fill")
                 Text("列表")
             }
             AnalysisGrapic(novelsData: self.novelsData).tabItem {
-                Image(systemName: "rectangle.expand.vertical")
-                Text("分析")
+                Image(systemName: "chart.bar.fill")
+                Text("統計")
             }
         }
     }
